@@ -1,0 +1,173 @@
+/* GERAIS */
+
+html,body,figure,img,div,input,textarea,p,h1,h2,h3,h4,h5,h6,ul,li,a,main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    --cor--principal: #03f5f546;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ml {
+    margin-left: 40px;
+}
+
+.md-mt {
+    margin-top: 30px;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: .1px solid #fff;
+}
+
+.h1-header a{
+    color: #fff !important;
+}
+
+#contato {
+    padding: 7px 15px;
+    border-radius: 50px;
+    background-color: var(--cor--principal);
+}
+
+#alterarDados{
+    display: none;
+}
+
+/* BANNER */
+
+main .banner-top {
+    height: 12vh;
+    background-color: #7b0fe037;
+    color: #fff;
+    padding: 5vh 7.7vw;
+}
+
+main .banner-top h2 {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+main .banner-top p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.atividades {
+    width: 93%;
+    margin: 50px auto 0 auto;
+    padding-bottom: 40px;
+}
+
+.cardsAtividades {
+    display: flex;
+    width: 100%;
+}
+
+.cards {
+    background-color: #0e0e0ee5;
+    height: 23%;
+    width: 23%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    border: solid 0.5px #000;
+}
+
+.cards:hover {
+    border: solid 0.5px #7b0fe0;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards p a {
+    color: #7b0fe0;
+}
+
+@media screen and (max-width: 500px) {
+    .cardsAtividades {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 30px;
+    }
+
+    .cards p a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .banner-top p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cards p a {
+        font-size: 13px;
+    }
+
+    main .banner-top h2 {
+        font-size: 30px;
+    }
+
+    main .banner-top p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cardsAtividades {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 30px;
+    }
+
+    .cards p a {
+        font-size: 20px;
+    }
+
+    main .banner-top h2 {
+        font-size: 25px;
+    }
+
+    main .banner-top p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    main .banner-top{
+        padding: 2vh 5vw;
+        height: 15vh;
+    }
+    main .banner-top h2 {
+        font-size: 19.2px;
+    }
+
+    main .banner-top p {
+        font-size: 12px;
+    }
+}
