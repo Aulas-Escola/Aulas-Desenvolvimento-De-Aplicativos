@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunão</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/produtos.css">
+    <link rel="stylesheet" href="../assets/css/cursos.css">
+</head>
+<body onload="executando()">
+    <header>
+        <h1 class="h1-header">CodeSpace</h1>
+
+        <nav class="nav-header">
+            <button id="botao-mobile">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li>
+                    <a href="../produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="#contato">Entre em Contato</a>
+                </li>
+                <li class="login">
+                    <a href="../login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="area-video">
+            <h2 class="tituloVideo">Vídeo 01</h2>
+            <div class="conjunto">
+                <div class="divButton">
+                    <select name="" id="selectModulo" onclick="selecionarValor()">
+                        <option value="A">Módulo A</option>
+                        <option value="B">Módulo B</option>
+                        <option value="C">Módulo C</option>
+                        <option value="D">Módulo D</option>
+                    </select>
+                    <button class="pressionado" onclick="video01()">Video 01</button>
+                    <button onclick="video02()">Video 02</button>
+                </div>
+                <div class="mp4">
+                    <iframe class="video01" width="1280" height="720" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video02" width="1280" height="720" src="https://www.youtube.com/embed/jgQjeqGRdgA?list=RDCMUCrWvhVmt0Qac3HgsjQK62FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/cursos.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+main{
+    width: 80vw;
+    margin: auto;
+    padding: 5%;
+}
+
+main p:hover {
+    cursor: pointer;
+}
+
+.tituloOpcao > p{
+    margin-bottom: 2%;
+}
+
+.tituloOpcao > p > span{
+    float: right;
+}
+
+.opcoesAdm input:nth-child(3){
+    margin-left: 10%;
+}
+.opcoesAdm > input{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(171, 171, 171);
+    width: 40%;
+    display: none;
+}
+
+.opcoesAdm > input.active{
+    display: inline-block;
+}
+
+.salvar{
+    padding: 15px;
+    background-color: #7b0fe0;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+}
